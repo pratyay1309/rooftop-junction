@@ -1,0 +1,85 @@
+/* ===== ABOUT LAYOUT ===== */
+.about__layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Left Column — Text */
+.about__text p {
+  color: var(--text-muted);
+  font-size: 0.97rem;
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right Column — Stat Cards */
+.about__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__stat-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 24px;
+}
+
+.about__stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--deep-navy), #243d66);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about__stat-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--accent-gold);
+}
+
+.about__stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about__stat-label {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.about__stat-value {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--deep-navy);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .about__layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__stat-card {
+    padding: 20px;
+  }
+}
