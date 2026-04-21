@@ -50,7 +50,16 @@ export default function Contact() {
                     <div><span className="contact__item-label">Address</span><span className="contact__item-value">Milkat No. 0524 Canal Road, Khadak Vasla Road,<br />Pune, Maharashtra – 411023</span></div>
                   </div>
                 </div>
-                <div className="contact__map-placeholder" id="map-placeholder">REPLACE WITH GOOGLE MAPS EMBED</div>
+                <iframe
+                  src="https://www.google.com/maps?q=Khadak+Vasla+Road,+Pune,+Maharashtra+411023&output=embed"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0, borderRadius: '8px' }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Roof Junction Location"
+                />
               </div>
             </FadeIn>
             <FadeIn delay={200}>
